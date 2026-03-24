@@ -15,4 +15,6 @@ app.post("/todos", (req, res) => {
   res.json({ status: "success", data: todo });
 });
 
-app.listen(3000, () => console.log("Server jalan"));
+app.listen(3000, "0.0.0.0", () => {
+  console.log("Server jalan");
+});
